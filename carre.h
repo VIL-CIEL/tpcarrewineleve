@@ -62,7 +62,7 @@ ref class CCarre
 			/// <returns>Position y du carré</returns>
 			int Getsy()
 			{
-				return sy
+				return sy;
 			}
 
 

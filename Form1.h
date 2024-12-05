@@ -32,11 +32,10 @@ namespace tpcarrewineleve {
 			// instanciation dans le tas managé du carré numéro 1 
 			pcarre1 = gcnew CCarre();
 			pcarre1->SetColor(Color::Red);
-			
-			
-			// A COMPLETER /////////////////////////////////////////////////////////////////////////////////
 
-
+			pcarre1->Setsx(10);
+			pcarre1->Setsy(10);
+			pcarre1->SetCote(150);
 
 			this->timer1->Enabled = true;
 			largeur = this->ClientRectangle.Width;
