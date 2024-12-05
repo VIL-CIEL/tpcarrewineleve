@@ -3,7 +3,7 @@
 /// rev 2024
 /// VERSION ELEVE a completer
 /// </summary>
-
+/// 
 using namespace System;
 using namespace System::Drawing;
 
@@ -18,6 +18,8 @@ ref class CCarre
 			int sx;
 			int sy;
 			Color color;
+			int dx;
+			int dy;
 		
 		public :
 			CCarre()
@@ -26,6 +28,8 @@ ref class CCarre
 				sy = 10;
 				cote = 20;
 				color = Color::Red;
+				dx = 1;
+				dy = 1;
 			}
 
 			/// <summary>
@@ -124,5 +128,29 @@ ref class CCarre
 				Graphics ^g = form->CreateGraphics();
 				g->FillRectangle(gcnew SolidBrush(form->BackColor), sx, sy, cote, cote);
 			}
+			
+			/// <summary>
+			/// Anime le carré
+			/// </summary>
+			/// <param name="form"></param>
+			void Animer(System::Windows::Forms::Form^ form, int largeur, int hauteur) {
 				
+				if (dx <= 0) {
+					if (sy + cote < hauteur) {
+						Effacer(form);
+						Deplacer(0, 7);
+						Dessiner(form);
+					}
+					if (sy + cote >= hauteur) {
+						dx = 10;
+					}
+				}
+				else {
+					Effacer(form);
+					Deplacer(0, -5);
+					Dessiner(form);
+					dx -= 1;
+				}
+					
+			}
 	};
