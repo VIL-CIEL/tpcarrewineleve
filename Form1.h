@@ -106,10 +106,11 @@ namespace tpcarrewineleve {
 		/// Appelé périodiquement pour redessiner les carrés dans la fenetre
 		/// </summary>
 	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
-				// A COMPLETER ////////////////////////////////////////////////////////////////////////
+
+				pcarre1->Effacer(this);
+				pcarre1->Deplacer(0, 1);
 				pcarre1->Dessiner(this);
-				//		 pcarre1->Effacer(this);
-				 
+				
 			 
 			 }
 	};
