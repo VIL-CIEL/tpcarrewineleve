@@ -35,7 +35,14 @@ namespace tpcarrewineleve {
 
 			pcarre1->Setsx(10);
 			pcarre1->Setsy(10);
-			pcarre1->SetCote(150);
+			pcarre1->SetCote(50);
+
+			pcarre2 = gcnew CCarre();
+			pcarre2->SetColor(Color::Blue);
+
+			pcarre2->Setsx(70);
+			pcarre2->Setsy(50);
+			pcarre2->SetCote(50);
 
 			this->timer1->Enabled = true;
 			largeur = this->ClientRectangle.Width;
@@ -63,6 +70,7 @@ namespace tpcarrewineleve {
 		/// Le Carré numéro 1.
 		/// </summary>
 		CCarre ^pcarre1;
+		CCarre^ pcarre2;
 		/// <summary>
 		/// Largeur de la fenêtre
 		/// </summary>
@@ -108,6 +116,7 @@ namespace tpcarrewineleve {
 	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
 		
 		pcarre1->Animer(this, largeur, hauteur);
+		pcarre2->Animer(this, largeur, hauteur);
 				
 		}
 	};
