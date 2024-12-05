@@ -34,7 +34,7 @@ ref class CCarre
 			/// <param name="x">Position x du carré</param>
 			void Setsx(int x1)
 			{
-				// A COMPLETER ///////////////////////////////////////////////////////////////////////////
+				sx = x1;
 			}
 
 			/// <summary>
@@ -43,8 +43,7 @@ ref class CCarre
 			/// <returns>Position x du carré</returns>
 			int Getsx()
 			{
-				// A COMPLETER ///////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				return sx;
 			}
 
 			/// <summary>
@@ -53,7 +52,7 @@ ref class CCarre
 			/// <param name="y">Position y du carré</param>
 			void Setsy(int y1)
 			{
-				// A COMPLETER //////////////////////////////////////////////////////////////////////////
+				sy = y1;
 				
 			}
 
@@ -63,8 +62,7 @@ ref class CCarre
 			/// <returns>Position y du carré</returns>
 			int Getsy()
 			{
-				// A COMPLETER //////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				return sy
 			}
 
 
@@ -81,9 +79,9 @@ ref class CCarre
 			/// initialise m_cote privé
 			/// </summary>
 			/// <param name="cote">Coté du carré</param>
-			void SetCote(int cote)
+			void SetCote(int cote1)
 			{
-				// A COMPLETER /////////////////////////////////////////////////////////////////////////
+				cote = cote1;
 			}
 
 			/// <summary>
@@ -92,8 +90,7 @@ ref class CCarre
 			/// <returns>Coté du carré</returns>
 			int GetCote() 
 			{
-				// A COMPLETER ////////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				return cote;
 			}
 
 			/// <summary>
@@ -103,7 +100,9 @@ ref class CCarre
 			/// <param name="dy">Valeur dy du déplacement</param>
 			void Deplacer(int dx, int dy) 
 			{
-				// A COMPLETER /////////////////////////////////////////////////////////////////////
+				sx += dx;
+				sy += dy;
+
 			}
 
 			/// <summary>
