@@ -37,7 +37,7 @@ namespace tpcarrewineleve {
 			for (int i = 0; i < nbcarre; i++) {
 
 				tabCarre[i] = gcnew CCarre;
-				tabCarre[i]->Setsx(rand->Next(1100));
+				tabCarre[i]->Setsx(rand->Next(1100)); 
 				tabCarre[i]->Setsy(rand->Next(100));
 				tabCarre[i]->SetCote(rand->Next(80));
 
