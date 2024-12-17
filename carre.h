@@ -29,7 +29,6 @@ ref class CCarre
 				cote = 20;
 				color = Color::Red;
 				dx = 1;
-				dy = 1;
 			}
 
 			/// <summary>
@@ -138,7 +137,7 @@ ref class CCarre
 				if (dx <= 0) {
 					if (sy + cote < hauteur) {
 						Effacer(form);
-						Deplacer(0, 7);
+						Deplacer(0, cote*1.5);
 						Dessiner(form);
 					}
 					if (sy + cote >= hauteur) {
@@ -147,7 +146,7 @@ ref class CCarre
 				}
 				else {
 					Effacer(form);
-					Deplacer(0, -5);
+					Deplacer(0, -(cote*1.4) );
 					Dessiner(form);
 					dx -= 1;
 				}
