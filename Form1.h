@@ -1,3 +1,9 @@
+/// @file NomDuFichier.h 
+/// @brief Programme principal du TP… 
+/// @details Ce programme utilise … 
+/// @author Serge Delbosc 
+/// @version 0.1 - Visual Studio 2019 
+/// @date 09/09/2024 
 /// <summary>
 /// TP Animation de carre version C++.net visual Studio 2017
 /// rev 2024
@@ -112,7 +118,9 @@ namespace tpcarrewineleve {
 		int hauteur;
 	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
 
+		/// @brief le nombre de carré
 		int nbcarre;
+		/// @brief le choix du carré pour l'animation
 		int choixCarre;
 
 
@@ -166,6 +174,11 @@ namespace tpcarrewineleve {
 		
 				
 		}
+		  
+	/// @brief 
+	/// @param[in] sender 
+	/// @param[in] e la touche pressé
+	/// @return void
 	private: System::Void Form1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 		// z 122; q 113; s 115; d 100
 		

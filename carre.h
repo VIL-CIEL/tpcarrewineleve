@@ -1,3 +1,9 @@
+/// @file NomDuFichier.h 
+/// @brief Programme principal du TP… 
+/// @details Ce programme utilise … 
+/// @author Serge Delbosc 
+/// @version 0.1 - Visual Studio 2019 
+/// @date 09/09/2024 
 /// <summary>
 /// TP Animation de carre version C++.net visual Studio 2017
 /// rev 2024
@@ -13,13 +19,16 @@ using namespace System::Drawing;
 ref class CCarre
 	{
 		private :
-			
+			/// @brief la longueur du coté du carré
 			int cote;
+			/// @brief la coordonnées x du carré
 			int sx;
+			/// @brief la coordonnées y du carré
 			int sy;
+			/// @brief la couleur du carré 
 			Color color;
+			/// @brief variable de compteur pour l'animation
 			int dx;
-			int dy;
 		
 		public :
 			CCarre()
@@ -132,6 +141,12 @@ ref class CCarre
 			/// Anime le carré
 			/// </summary>
 			/// <param name="form"></param>
+			/// @brief Fonction d'animation
+			/// @param[in] Form Carre
+			/// @param[in] largeur largeur de la fenetre
+			/// @param[in] hauteur hauteur de la fenetre
+			/// @param[out] void
+			/// @return void
 			void Animer(System::Windows::Forms::Form^ form, int largeur, int hauteur) {
 				
 				if (dx <= 0) {
